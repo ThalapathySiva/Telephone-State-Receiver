@@ -28,7 +28,7 @@ public class BroadCast extends BroadcastReceiver {
                 Toast.makeText(context,"IDLE State",Toast.LENGTH_LONG).show();
             }
              else if ((state != null) &&  (state.equalsIgnoreCase(TelephonyManager.EXTRA_STATE_RINGING))) {
-                Toast.makeText(context,"PICKED State",Toast.LENGTH_LONG).show();
+                Toast.makeText(context,"CALL PICKED ",Toast.LENGTH_LONG).show();
             }
             else if (state.equalsIgnoreCase(String.valueOf(TelephonyManager.EXTRA_STATE_OFFHOOK))) {
                 Toast.makeText(context,"OFFHOOK State",Toast.LENGTH_LONG).show();
